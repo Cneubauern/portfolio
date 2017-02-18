@@ -3,61 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Christian Neubauer's portfolio</title>
+	<!-- Viewport Meta tag to prevent iPhone from scaling the page -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 	<link rel="stylesheet" href="./css/style.css"/>
+
+	<!-- Normalize hide address bar for iOS and Android -->
+	<script src="./js/hideaddressbar.js"></script>
+
+	<script src=".js/respond.min.js"></script>
+
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<!-- Normalize hide address bar for iOS and Android -->
-	<script src="./js/hideaddressbar.js"></script>
-	<style type="text/css" media="all">
 
-		#nav, #masthead, #content, #colophon {
-			margin: 0 18px;
 
-		}
 
-		#container-nav {
-			background: #ffffff;
 
-		}
 
-		#container-header {
-			background: #352a38;
-			height: 350px;
-			width: 100%;
 
-		}
-
-		#container-content {
-			padding: 24px 0;
-		}
-
-		#container-footer {
-			padding: 32px 0;
-			background: #352a38;
-			color: #eeeeee;
-			font-weight: 100;
-		}
-
-		.box {
-			padding: 14px;
-		}
-
-		img {
-			max-width: 100%;
-		}
-	</style>
 
 </head>
 
 <body lang="en">
 <div id="container-nav">
-	<!--Add opening <section> tag below here-->
 	<section id="nav">
 		<h3>Christian Neubauer</h3>
-
-		<!--Add opening <nav> tag below here-->
 		<!-- Turn off for now
 		<nav>
 
@@ -68,13 +39,11 @@
 				<li>Contact</li>
 			</ul>
 		</nav>-->
-
-		<!--Add closing <nav> tag above here-->
 	</section>
-	<!--Add closing <section> tag above here-->
+
 </div>
 <div id="container-header">
-	<!--Add opening <header> tag below here-->
+
 	<header id="masthead">
 
 		<h1>Hi, I'm Christian</h1>
@@ -82,17 +51,15 @@
 		<h2>A Bavaria-based designer/developer hybrid with a passion for user experience and the web</h2>
 
 	</header>
-	<!--Add closing <header> tag above here-->
+
 </div>
 
 <div id="container-content">
-	<!--Add opening <article> tag below here-->
+
 	<article id="content">
 
-		<!--Add opening <section> tag below here-->
-		<section>
+		<section id="portfolio" class="group">
 
-			<!--Add opening <header> tag below here-->
 			<header>
 
 				<h3>My Portfolio</h3>
@@ -101,97 +68,92 @@
 
 			</header>
 
-			<!--Add closing <header> tag above here-->
-			<h4>Vitamin T Homepage</h4>
+			<article>
+				<h4>Vitamin T Homepage</h4>
 
-			<!--Add opening <figure> tag below here-->
-			<figure>
-				<img src="./img/vitamin-t.png">
-			</figure>
-			<!--Add closing <figure> tag above here-->
+				<figure>
+					<img src="./img/vitamin-t.png">
+				</figure>
+			</article>
+			<article>
 
-			<h4>RoboHead iPad App</h4>
+				<h4>RoboHead iPad App</h4>
 
-			<!--Add opening <figure> tag below here-->
-			<figure>
-				<img src="./img/robohead.png">
-			</figure>
-			<!--Add closing <figure> tag above here-->
+				<figure>
+					<img src="./img/robohead.png">
+				</figure>
+			</article>
+			<article>
 
-			<h4>Shareist Homepage</h4>
+				<h4>Shareist Homepage</h4>
 
-			<!--Add opening <figure> tag below here-->
-			<figure>
-				<img src="./img/shareist.png">
-			</figure>
-			<!--Add closing <figure> tag above here-->
-
+				<figure>
+					<img src="./img/shareist.png">
+				</figure>
+			</article>
 		</section>
-		<!--Add closing <section> tag above here-->
 
-		<!--Add opening <section> tag below here-->
-		<section>
-			<!--Add opening <header> tag below here-->
+		<section id="resume">
+
 			<header>
 				<h3>My Resume</h3>
 				<p>Current/previous positions and skill set</p>
 			</header>
-			<!--Add closing <header> tag above here-->
 
-			<div class="box">
+			<article>
+				<div class="box">
 
-				<h4>Currently</h4>
+					<h4>Currently</h4>
 
-				<h5>Designer/Developer</h5>
+					<h5>Designer/Developer</h5>
 
-				<h6>Self-employed</h6>
+					<h6>Self-employed</h6>
 
-				<p>Design and development for a two-person studio in Boston, MA. Clients include Boston Red Sox, Sam
-					Adams and Aerosmith</p>
-			</div>
+					<p>Design and development for a two-person studio in Boston, MA. Clients include Boston Red Sox, Sam
+						Adams and Aerosmith</p>
+				</div>
+			</article>
+			<article>
 
-			<div class="box">
+				<div class="box">
 
-				<h4>Previously</h4>
+					<h4>Previously</h4>
 
-				<h5>Lead UI Designer</h5>
+					<h5>Lead UI Designer</h5>
 
-				<h6>Aquent University</h6>
+					<h6>Aquent University</h6>
 
-				<p>Lead designer and theme developer for AU's home-built CMS. Worked with several other groups at the
-					university as well.</p>
-			</div>
-			<div class="box">
+					<p>Lead designer and theme developer for AU's home-built CMS. Worked with several other groups at
+						the
+						university as well.</p>
+				</div>
+			</article>
 
-				<h4>Skills</h4>
+			<article>
+				<div class="box">
+					<h4>Skills</h4>
+					<ul>
+						<li>Photoshop, Fireworks and Illustrator</li>
+						<li>HTML5 &amp; CSS3</li>
+						<li>Responsive Web Design</li>
+						<li>Mobile App (Native and Web) Design</li>
+					</ul>
+				</div>
+			</article>
 
-				<ul>
-					<li>Photoshop, Fireworks and Illustrator</li>
-					<li>HTML5 &amp; CSS3</li>
-					<li>Responsive Web Design</li>
-					<li>Mobile App (Native and Web) Design</li>
-				</ul>
-			</div>
-
-			<!--Add opening <footer> tag below here-->
 			<footer>
 				<p>For a full work history, have a look at my LinkedIn Profile</p>
 
 			</footer>
-			<!--Add closing <footer> tag above here-->
 
-			<!--Add closing <section> tag above here-->
 		</section>
 	</article>
-	<!--Add closing <article> tag above here-->
 </div>
 <div id="container-footer">
-	<!--Add opening <footer> tag below here-->
 	<footer id="colophon">
 		<p>©2013 all rights reserved. Fill out a form here to get in touch.</p>
 
 	</footer>
-	<!--Add closing <footer> tag above here-->
 </div>
 </body>
 
